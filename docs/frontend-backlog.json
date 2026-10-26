@@ -1,0 +1,320 @@
+{
+  "source": "Vq-school-backend/docs/backlog.json",
+  "tasks": [
+    {
+      "id": "FE-01",
+      "title": "Workspace React, shell y componentes compartidos",
+      "hu": [
+        "HU-01",
+        "HU-02"
+      ],
+      "phase": "R0",
+      "criteria": [
+        "Workspace con npm lockfile, TypeScript estricto y builds independientes; shell adaptable y componentes compartidos sin lógica de negocio.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/2",
+      "issue_number": 2
+    },
+    {
+      "id": "FE-02",
+      "title": "Integrar dos microfrontends con Module Federation",
+      "hu": [
+        "HU-01",
+        "HU-13",
+        "HU-40"
+      ],
+      "phase": "R0",
+      "criteria": [
+        "Académico y Aprendizaje cargan bundles en runtime; React singleton, contrato tipado y fallback cuando falla un remoto; el otro sigue operativo.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/3",
+      "issue_number": 3
+    },
+    {
+      "id": "FE-03",
+      "title": "CI y contenedores independientes de frontend",
+      "hu": [
+        "HU-03",
+        "HU-36"
+      ],
+      "phase": "R0",
+      "criteria": [
+        "CI ejecuta typecheck, pruebas, builds y E2E; imagen por aplicación; promoción y rollback documentados sin afirmar protección de ramas aplicada.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/4",
+      "issue_number": 4
+    },
+    {
+      "id": "FE-04",
+      "title": "Integrar sesión BFF y navegación autorizada",
+      "hu": [
+        "HU-05",
+        "HU-07"
+      ],
+      "phase": "R0",
+      "criteria": [
+        "Login y logout POST con CSRF, expiración y error; sin tokens en navegador; navegación según membresía del servidor.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/5",
+      "issue_number": 5
+    },
+    {
+      "id": "FE-05",
+      "title": "Pantallas de configuración y gestión escolar",
+      "hu": [
+        "HU-04",
+        "HU-06",
+        "HU-08",
+        "HU-09",
+        "HU-10",
+        "HU-11",
+        "HU-12"
+      ],
+      "phase": "R1",
+      "criteria": [
+        "Gestionar colegio, usuarios, año, cursos, matrículas, contactos, docentes y horario; errores/duplicados/conflictos visibles y cambio de colegio sin mezclar datos.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/6",
+      "issue_number": 6
+    },
+    {
+      "id": "FE-06",
+      "title": "Inicio por perfil y asignaturas personales",
+      "hu": [
+        "HU-13"
+      ],
+      "phase": "R1",
+      "criteria": [
+        "Alumno ve datos propios, docente sus cursos y demás perfiles su navegación; estados vacío/error/carga sin métricas inventadas.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/7",
+      "issue_number": 7
+    },
+    {
+      "id": "FE-07",
+      "title": "Interfaces de evaluaciones, notas y promedios",
+      "hu": [
+        "HU-14",
+        "HU-15",
+        "HU-16"
+      ],
+      "phase": "R1",
+      "criteria": [
+        "Docente configura, guarda, publica y corrige con motivo; alumno ve sólo publicadas; respetar estados y conflictos, sin convertir pendiente a cero.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/8",
+      "issue_number": 8
+    },
+    {
+      "id": "FE-08",
+      "title": "Registro y consulta de asistencia",
+      "hu": [
+        "HU-17",
+        "HU-18"
+      ],
+      "phase": "R1",
+      "criteria": [
+        "Registro docente por sesión y consulta personal con numerador/denominador y pendientes; idempotencia y errores de concurrencia visibles.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/9",
+      "issue_number": 9
+    },
+    {
+      "id": "FE-09",
+      "title": "Publicación y consulta de materiales",
+      "hu": [
+        "HU-19",
+        "HU-20",
+        "HU-39"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Upload con límites, progreso y cuarentena; descarga autorizada de publicados, manejo de rechazados/retirados y URL vencida.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/10",
+      "issue_number": 10
+    },
+    {
+      "id": "FE-10",
+      "title": "Editor de preguntas y publicación de pruebas",
+      "hu": [
+        "HU-21",
+        "HU-22"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Tres tipos de pregunta, pauta privada, ventana/duración/curso; confirmación e inmutabilidad al publicar y cancelación con motivo.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/11",
+      "issue_number": 11
+    },
+    {
+      "id": "FE-11",
+      "title": "Rendir pruebas con autoguardado y recuperación",
+      "hu": [
+        "HU-23"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Distinguir cambios locales y confirmados; vencimiento del servidor, reconexión, entrega idempotente y pruebas de desconexión/doble envío.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/12",
+      "issue_number": 12
+    },
+    {
+      "id": "FE-12",
+      "title": "Corrección, retroalimentación y resultados",
+      "hu": [
+        "HU-24",
+        "HU-25"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Corrección de abiertas y liberación tras cierre; resultados propios; traspaso explícito a nota con pendiente/error/conflicto y reintento.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/13",
+      "issue_number": 13
+    },
+    {
+      "id": "FE-13",
+      "title": "Sitio público React y administración CMS",
+      "hu": [
+        "HU-26",
+        "HU-27"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Aplicación separada con HTML indexable; editor y previsualización segura; sólo contenido publicado sin expedientes.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/14",
+      "issue_number": 14
+    },
+    {
+      "id": "FE-14",
+      "title": "Campañas y bandeja de comunicaciones",
+      "hu": [
+        "HU-28",
+        "HU-29",
+        "HU-30"
+      ],
+      "phase": "R2",
+      "criteria": [
+        "Segmentación y confirmación de destinatarios, bandeja propia y estados distintos para envío/lectura/fallo; ausencia de correo visible.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/15",
+      "issue_number": 15
+    },
+    {
+      "id": "FE-15",
+      "title": "Pantallas de inspectoría",
+      "hu": [
+        "HU-31",
+        "HU-32",
+        "HU-33"
+      ],
+      "phase": "R3",
+      "criteria": [
+        "Anotaciones distintas de notas; retiros con autorización/retorno; citaciones con estados, reprogramación y constancia; sin expedientes en URLs.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/16",
+      "issue_number": 16
+    },
+    {
+      "id": "FE-16",
+      "title": "Auditoría y reportes autorizados",
+      "hu": [
+        "HU-34",
+        "HU-38"
+      ],
+      "phase": "R3",
+      "criteria": [
+        "Filtros/paginación por dominio/colegio; exportaciones con límites; detalle con permiso y sin edición/borrado de auditoría.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "Pendiente",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/17",
+      "issue_number": 17
+    },
+    {
+      "id": "FE-17",
+      "title": "E2E, accesibilidad y aislamiento de interfaz",
+      "hu": [
+        "HU-35",
+        "HU-37"
+      ],
+      "phase": "R3",
+      "criteria": [
+        "Dos colegios y cuatro perfiles, revocación, teclado/móvil; separar mocks de integración real con BFF/Keycloak.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/18",
+      "issue_number": 18
+    },
+    {
+      "id": "FE-18",
+      "title": "Laboratorio de despliegue y recuperación MFE",
+      "hu": [
+        "HU-03",
+        "HU-36",
+        "HU-37"
+      ],
+      "phase": "R0",
+      "criteria": [
+        "Cambiar/desplegar sólo Aprendizaje; evidenciar independencia, fallo y recuperación, caché y diferencias entre Compose y producción.",
+        "Estados carga, vacío, error y sesión expirada; interfaz accesible y adaptable.",
+        "Validar contratos y permisos con backend; no usar datos reales de menores en pruebas públicas."
+      ],
+      "status": "En progreso (base parcial)",
+      "issue_url": "https://github.com/vmorenov/Va-school-app/issues/19",
+      "issue_number": 19
+    }
+  ]
+}
