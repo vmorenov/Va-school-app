@@ -1,0 +1,15 @@
+{
+  "name": "@vq/academic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4174 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort"
+  },
+  "dependencies": {
+    "@vq/contracts": "*",
+    "@vq/ui": "*"
+  }
+}
